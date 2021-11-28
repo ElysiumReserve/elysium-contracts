@@ -61,6 +61,16 @@ const config: HardhatUserConfig = {
     kovan: getChainConfig("kovan"),
     rinkeby: getChainConfig("rinkeby"),
     ropsten: getChainConfig("ropsten"),
+    evmosLocal: {
+      url: "http://localhost:8545/",
+      accounts: {
+        count: 1,
+        mnemonic,
+      },
+    },
+    evmosTestnet: {
+      url: "https://ethereum.rpc.evmos.dev",
+    },
   },
   paths: {
     artifacts: "./artifacts",

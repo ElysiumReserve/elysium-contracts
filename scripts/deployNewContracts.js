@@ -29,7 +29,6 @@ async function main() {
     await sOHM.setIndex('');
     await sOHM.setgOHM(gOHM);
     await sOHM.initialize(staking.address, olympusTreasury.address);
-    
 
 
     console.log("OHM: " + ohm.address);
